@@ -5,3 +5,5 @@ libSOIL.dylib
 *.o
 *.os
 .sconsign.dblite
+
+*.pyc
