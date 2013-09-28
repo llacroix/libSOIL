@@ -3,3 +3,5 @@
 libSOIL.a
 libSOIL.dylib
 *.o
+*.os
+.sconsign.dblite
