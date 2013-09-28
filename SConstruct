@@ -22,11 +22,13 @@ Export('env idir_prefix idir_lib idir_bin idir_inc')
 soil_sources = Glob("src/*.c")
 #libsoil = env.Library('libSOIL', soil_sources)
 
-static_Lib = env.StaticLibrary(target="SOIL", source=soil_sources)
+static_lib = env.StaticLibrary(target="SOIL", source=soil_sources)
 shared_lib = env.SharedLibrary(target="SOIL", source=soil_sources)
 
-env.Install(idir_lib, static_Lib)
+env.Install(idir_lib, static_lib)
 env.Install(idir_lib, shared_lib)
 env.Install(idir_inc, Glob('src/*.h'))
 
 env.Alias('install', idir_prefix)
+
+Default(static_lib, shared_lib)
