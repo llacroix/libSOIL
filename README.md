@@ -7,3 +7,6 @@ Clone this repo, make, make install. To install elsewhere, change the INCLUDEDIR
 # License
 Public domain.
 
+# Homepage
+
+The homepage of the project http://www.lonesock.net/soil.html
